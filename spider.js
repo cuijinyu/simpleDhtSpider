@@ -39,7 +39,7 @@ class Spider extends eventEmitter{
             this.udp.close();
         });
         this.udp.on('message',(pack,address)=>{
-            console.log(address);
+            // console.log(address);
             // console.log(pack);
             this.parse(pack,address);
         });
@@ -59,7 +59,7 @@ class Spider extends eventEmitter{
         try{
             let message = bencode.decode(pack);
             if(message.y.toString() == 'r'){
-
+                this.resFoundNode(message.r.nodes);
             }else if(message.y.toString() == 'q'){
                 let question = message.q.toString();
                 switch (question){
@@ -74,19 +74,21 @@ class Spider extends eventEmitter{
                         break;
                 }
             }
+        }catch(e){
+            console.log(e);
         }
     }
-    ping(){
-
-    }
-
-    store(){
-
-    }
+    /*
+        不实现ping get_peers等，只用实现find_node
+    */
     join(){
         this.bootstrap.forEach(root=>{
             this.find_node(this.table.nodeId,root)
         })
+        //设置定时器，定时向外发送find_node请求
+        setInterval(()=>{
+
+        },10)
     }
     find_node(id, target){
         let message = {
@@ -101,6 +103,11 @@ class Spider extends eventEmitter{
         this.send(message,target)
     }
 
+    resFoundNode(data){
+        console.log("I am the node that has been found");
+        let nodes = utils.decodeNode(data);
+        console.log(nodes);
+    }
 
     resPing(msg,addr){
         this.send({
