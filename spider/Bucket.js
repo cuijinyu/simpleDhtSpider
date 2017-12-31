@@ -16,11 +16,13 @@ class Bucket{
      */
     append(node){
         if( node.nodeId > this.min && node.nodeId < this.max ){
+            // console.log(typeof node.nodeId);
             node.nodeId = node.nodeId.toString();
-            if( node.nodeId.length != 20){
-                console.log("I am not equal to 20")
-                return
-            }
+            // console.log(node.nodeId.length);
+            // if( node.nodeId.length != 20){
+            //     // console.log("I am not equal to 20")
+            //     return
+            // }
             if(this.nodes.length == 0){
                 this.nodes.push(node);
                 return

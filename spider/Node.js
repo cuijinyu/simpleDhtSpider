@@ -9,5 +9,4 @@ class Node{
         this.port = port;
     }
 }
-var test =new Node();
 module.exports = Node;
