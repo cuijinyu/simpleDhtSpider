@@ -19,3 +19,13 @@
 - [ ] 完成bep_009协议的实现
 - [ ] 对种子进行分类，方便对其的进一步处理
 - [ ] O(∩_∩)O写个磁力搜索引擎怎么样
+
+## 参考文档
+(DHT协议官方版本)[http://www.bittorrent.org/beps/bep_0005.html]
+(P2P中DHT网络介绍)[http://blog.csdn.net/mergerly/article/details/7989281]
+(BitTorrent的DHT协议(译自官方版本))[http://blog.csdn.net/mergerly/article/details/7989188]
+(P2P中DHT网络爬虫)[http://codemacro.com/2013/05/19/crawl-dht/]
+
+## 参考过的源码
+()[https://github.com/fanpei91/nodeDHT]
+()[https://github.com/cuijinyu/dhtspider]
