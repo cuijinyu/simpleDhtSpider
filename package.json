@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node spider.js",
+  	"start":"node spider.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bencode": "^1.0.0",
-    "mysql":"^1.0.0"
+    "mysql": "^2.15.0"
   }
 }
