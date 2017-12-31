@@ -4,7 +4,7 @@
  - node>v8.0.0
  - mysql
 ## 使用方法
- - 1.运行dht.sql创建数据库和表结构
+ - 1.先在mysql中创建dht数据库，之后运行dht.sql创建数据库和表结构
  - 2.修改db/dbconfig.js下的数据库配置
  - 3.npm install
  - 4.单线程运行node spider.js
