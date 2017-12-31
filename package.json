@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bencode": "^1.0.0"
+    "bencode": "^1.0.0",
+    "mysql":"^1.0.0"
   }
 }
