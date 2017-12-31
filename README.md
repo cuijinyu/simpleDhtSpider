@@ -27,5 +27,5 @@
 (P2P中DHT网络爬虫)[http://codemacro.com/2013/05/19/crawl-dht/]
 
 ## 参考过的源码
-()[https://github.com/fanpei91/nodeDHT]
-()[https://github.com/cuijinyu/dhtspider]
+(nodeDHT)[https://github.com/fanpei91/nodeDHT]
+(dhtspider)[https://github.com/cuijinyu/dhtspider]
