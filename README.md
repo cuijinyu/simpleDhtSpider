@@ -7,7 +7,7 @@
  - 1.先在mysql中创建dht数据库，之后运行dht.sql创建数据库和表结构
  - 2.修改db/dbconfig.js下的数据库配置
  - 3.npm install
- - 4.单线程运行node spider.js
+ - 4.单线程运行npm start(node spider.js)
  - 5.多进程运行node index.js(功能极其不完善)
 
 ## 文件结构
